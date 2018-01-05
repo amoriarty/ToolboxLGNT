@@ -30,7 +30,7 @@ Also, it can (and will) contains code that are maybe very differents, and you ma
   s.source           = { :git => 'https://github.com/amoriarty/ToolboxLGNT.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'ToolboxLGNT/Classes/**/*'
   
