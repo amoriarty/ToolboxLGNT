@@ -10,6 +10,12 @@ import UIKit
 import ToolboxLGNT
 
 class ViewController: UIViewController {
+    private let collectionViewController: CollectionViewController = {
+        let layout = UICollectionViewLayout()
+        let controller = CollectionViewController()
+        return controller
+    }()
+    
     private let centeredView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -53,13 +59,16 @@ class ViewController: UIViewController {
         setupViews()
         setupLayouts()
         setupRegex()
+        
+        let nextButton = UIBarButtonItem(barButtonSystemItem: .fastForward, target: self, action: #selector(handleNext))
+        navigationItem.rightBarButtonItem = nextButton
     }
     
     private func setupViews() {
         view.addSubview(coloredView)
-        view.addSubview(labelView)
         view.addSubview(centeredView)
         view.addSubview(fillingView)
+        view.addSubview(labelView)
         view.addSubview(adaptativeLabel)
     }
     
@@ -68,7 +77,6 @@ class ViewController: UIViewController {
         
         _ = labelView.constraint(.top, to: view.safeAreaLayoutGuide, constant: 10)
         _ = labelView.fill(.horizontaly, view.safeAreaLayoutGuide, constant: 10)
-        
         
         _ = centeredView.constraint(dimension: .height, constant: 100)
         _ = centeredView.constraint(.width, to: centeredView, .height)
@@ -87,6 +95,10 @@ class ViewController: UIViewController {
         let match = "Doloremque dolore qui"
         let matches = originalText.matches(for: match)
         labelView.text = "\(originalText)\nSupposed to matches \"\(match)\"\nMatches: \(matches)"
+    }
+    
+    @objc func handleNext() {
+        navigationController?.pushViewController(collectionViewController, animated: true)
     }
 }
 
