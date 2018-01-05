@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ToolboxLGNT'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ToolboxLGNT.'
+  s.summary          = 'A personnal toolbox to have all my generic codes in one place.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,12 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+ToolboxLGNT is a personnal toolbox.
+I begin it in order to keep track and have all my generics code in one place.
+Also, it can (and will) contains code that are maybe very differents, and you may only need some component of it and that why the source code is available on github.
                        DESC
 
   s.homepage         = 'https://github.com/amoriarty/ToolboxLGNT'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'GPL-3.0', :file => 'LICENSE' }
   s.author           = { 'amoriarty' => 'alexandrelegent@gmail.com' }
   s.source           = { :git => 'https://github.com/amoriarty/ToolboxLGNT.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
