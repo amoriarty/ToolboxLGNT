@@ -10,12 +10,19 @@ import UIKit
 import ToolboxLGNT
 
 class HorizontalController: DatasourceController {
-    let items = [0, 1, 2, 3, 4]
+    private let items = [
+        "https://www.hdwallpapers.in/walls/asteroids_eclipse-wide.jpg",
+        "https://www.hdwallpapers.in/walls/minimal_architecture-wide.jpg",
+        "https://www.hdwallpapers.in/walls/island_satellite_image-wide.jpg",
+        "https://www.hdwallpapers.in/walls/mountains_sunset-wide.jpg"
+    ]
+    
     override var types: [DatasourceCell.Type] {
         return [HorizontalCell.self]
     }
     
     override func setup(collectionView: UICollectionView) {
+        super.setup(collectionView: collectionView)
         guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
         layout.scrollDirection = .horizontal
         collectionView.isPagingEnabled = true
@@ -34,6 +41,10 @@ class HorizontalController: DatasourceController {
     }
     
     override func lineSpacing(in section: Int) -> CGFloat {
+        return 0
+    }
+    
+    override func itemSpacing(in section: Int) -> CGFloat {
         return 0
     }
 }

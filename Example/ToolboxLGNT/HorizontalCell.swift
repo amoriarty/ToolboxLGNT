@@ -12,25 +12,43 @@ import ToolboxLGNT
 class HorizontalCell: DatasourceCell {
     override var item: Any? {
         didSet {
-            guard let index = item as? Int else { return }
-            label.text = "Page \(index)"
-            backgroundColor = index % 2 == 0 ? .purple : .orange
+            guard let link = item as? String else { return }
+            
+            imageView.image = nil
+            ImageService.shared.getImage(at: link) { image in
+                self.activityView.stopAnimating()
+                self.imageView.image = image
+            }
         }
     }
     
-    let label: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
+    private let imageView: UIImageView = {
+        let view = UIImageView()
+        view.contentMode = .scaleAspectFit
+        view.backgroundColor = .white
+        return view
+    }()
+    
+    private let activityView: UIActivityIndicatorView = {
+        let view = UIActivityIndicatorView()
+        view.hidesWhenStopped = true
+        view.color = .black
+        view.startAnimating()
+        return view
     }()
     
     override func setupViews() {
         super.setupViews()
-        addSubview(label)
+        addSubview(imageView)
+        addSubview(activityView)
     }
     
     override func setupLayouts() {
         super.setupLayouts()
-        _ = label.center(self)
+        _ = imageView.center(self)
+        _ = imageView.fill(.horizontaly, self)
+        _ = imageView.constraint(.height, to: imageView, .width, multiplier: 9 / 16)
+        
+        _ = activityView.center(self)
     }
 }

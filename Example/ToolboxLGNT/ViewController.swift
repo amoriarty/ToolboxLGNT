@@ -14,28 +14,24 @@ class ViewController: UIViewController {
     
     private let centeredView: UIView = {
         let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .red
         return view
     }()
     
     private let fillingView: UIView = {
         let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .green
         return view
     }()
     
     private let coloredView: UIView = {
         let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor(r: 200, g: 200, b: 200, a: 0.6)
+        view.backgroundColor = UIColor(r: 255, g: 0, b: 255, a: 0.4)
         return view
     }()
     
     private let labelView: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Quis tenetur incidunt natus. Magnam iste quisquam aut sunt nulla ex consequatur nam. Architecto voluptate impedit deserunt quas. Doloremque dolore qui eius laborum deleniti et. Consequuntur consequatur molestiae unde aliquam asperiores sint quia incidunt. Voluptate voluptates enim a maiores quia."
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
@@ -44,7 +40,6 @@ class ViewController: UIViewController {
     
     private let adaptativeLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "A"
         label.font = UIFont.systemFont(ofSize: 50).sizeAdaptedFont
         return label

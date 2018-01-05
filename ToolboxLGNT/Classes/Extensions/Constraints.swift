@@ -8,9 +8,10 @@
 import UIKit
 
 public extension UIView {
-    public enum FillingType {
+    public enum FillingDirection {
         case horizontaly, verticaly
     }
+    
     public enum DimensionAttribute {
         case width, height
     }
@@ -23,11 +24,11 @@ public extension UIView {
         return result
     }
     
-    public func fill(_ type: FillingType, _ view: Any, constant: CGFloat = 0, multiplier: CGFloat = 1, active: Bool = true) -> [ NSLayoutAttribute: NSLayoutConstraint ] {
+    public func fill(_ type: FillingDirection, _ view: Any, constant: CGFloat = 0, multiplier: CGFloat = 1, active: Bool = true) -> [ NSLayoutAttribute: NSLayoutConstraint ] {
         return fill(type, view, leading: constant, trailing: constant, multiplier: multiplier, active: active)
     }
     
-    public func fill(_ type: FillingType, _ view: Any, leading: CGFloat, trailing: CGFloat, multiplier: CGFloat = 1, active: Bool = true) -> [ NSLayoutAttribute: NSLayoutConstraint ] {
+    public func fill(_ type: FillingDirection, _ view: Any, leading: CGFloat, trailing: CGFloat, multiplier: CGFloat = 1, active: Bool = true) -> [ NSLayoutAttribute: NSLayoutConstraint ] {
         var result = [ NSLayoutAttribute: NSLayoutConstraint ]()
         
         switch type {
@@ -49,7 +50,7 @@ public extension UIView {
         return result
     }
     
-    public func center(_ type: FillingType, _ view: Any, constant: CGFloat = 0, multiplier: CGFloat = 1, active: Bool = true) -> NSLayoutConstraint {
+    public func center(_ type: FillingDirection, _ view: Any, constant: CGFloat = 0, multiplier: CGFloat = 1, active: Bool = true) -> NSLayoutConstraint {
         switch type {
         case .horizontaly: return constraint(.centerX, to: view, constant: constant, multiplier: multiplier, active: active)
         case .verticaly: return constraint(.centerY, to: view, constant: constant, multiplier: multiplier, active: active)
@@ -85,6 +86,7 @@ public extension UIView {
         
         let constraint = NSLayoutConstraint(item: self, attribute: attribute, relatedBy: .equal, toItem: view, attribute: parentAttribute, multiplier: multiplier, constant: constant * inverse)
         
+        translatesAutoresizingMaskIntoConstraints = false
         constraint.isActive = active
         return constraint
     }

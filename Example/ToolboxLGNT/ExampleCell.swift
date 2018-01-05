@@ -30,8 +30,6 @@ class ExampleCell: DatasourceCell {
     
     let label: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "TEST TEST TEST"
         label.textAlignment = .center
         return label
     }()
@@ -43,6 +41,7 @@ class ExampleCell: DatasourceCell {
     }
     
     override func setupLayouts() {
+        super.setupLayouts()
         _ = label.fill(self)
     }
 }
