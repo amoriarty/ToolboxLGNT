@@ -10,11 +10,7 @@ import UIKit
 import ToolboxLGNT
 
 class ViewController: UIViewController {
-    private let collectionViewController: CollectionViewController = {
-        let layout = UICollectionViewLayout()
-        let controller = CollectionViewController()
-        return controller
-    }()
+    private let collectionViewController = CollectionViewController()
     
     private let centeredView: UIView = {
         let view = UIView()

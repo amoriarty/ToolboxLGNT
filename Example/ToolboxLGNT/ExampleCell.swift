@@ -9,6 +9,20 @@
 import UIKit
 import ToolboxLGNT
 
+class HeaderExample: ExampleCell {
+    override func setupViews() {
+        super.setupViews()
+        backgroundColor = .purple
+    }
+}
+
+class DifferentExample: ExampleCell {
+    override func setupViews() {
+        super.setupViews()
+        backgroundColor = .green
+    }
+}
+
 class ExampleCell: DatasourceCell {
     override var item: Any? {
         didSet { label.text = item as? String }
