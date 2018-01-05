@@ -15,9 +15,10 @@ class HorizontalCell: DatasourceCell {
             guard let link = item as? String else { return }
             
             imageView.image = nil
+            activityView.startAnimating()
             ImageService.shared.getImage(at: link) { image in
-                self.activityView.stopAnimating()
                 self.imageView.image = image
+                self.activityView.stopAnimating()
             }
         }
     }
