@@ -14,10 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		70561BADB57B7CCE23E2342C /* Pods_ToolboxLGNT_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02AE585A5CAE57032C9A131 /* Pods_ToolboxLGNT_Tests.framework */; };
-		EC1BBDDA1FFFACA30067F64B /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BBDD91FFFACA30067F64B /* ExampleCell.swift */; };
-		EC1BBDDC1FFFB68D0067F64B /* HorizontalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BBDDB1FFFB68D0067F64B /* HorizontalController.swift */; };
-		EC1BBDDE1FFFB6F40067F64B /* HorizontalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BBDDD1FFFB6F40067F64B /* HorizontalCell.swift */; };
-		EC3FFF681FFF9AF800FB8B47 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FFF671FFF9AF800FB8B47 /* CollectionViewController.swift */; };
+		EC43432520232C79003DC3FB /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC43432420232C79003DC3FB /* SecondController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +45,7 @@
 		B065A665207AFBAC1F1F43C1 /* Pods-ToolboxLGNT_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolboxLGNT_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToolboxLGNT_Tests/Pods-ToolboxLGNT_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C02AE585A5CAE57032C9A131 /* Pods_ToolboxLGNT_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolboxLGNT_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C82F1A40256C3580922A9D /* ToolboxLGNT.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ToolboxLGNT.podspec; path = ../ToolboxLGNT.podspec; sourceTree = "<group>"; };
-		EC1BBDD91FFFACA30067F64B /* ExampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCell.swift; sourceTree = "<group>"; };
-		EC1BBDDB1FFFB68D0067F64B /* HorizontalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalController.swift; sourceTree = "<group>"; };
-		EC1BBDDD1FFFB6F40067F64B /* HorizontalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCell.swift; sourceTree = "<group>"; };
-		EC3FFF671FFF9AF800FB8B47 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		EC43432420232C79003DC3FB /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
 		FDF263B46387B999307F5A4E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,10 +95,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				EC3FFF671FFF9AF800FB8B47 /* CollectionViewController.swift */,
-				EC1BBDD91FFFACA30067F64B /* ExampleCell.swift */,
-				EC1BBDDB1FFFB68D0067F64B /* HorizontalController.swift */,
-				EC1BBDDD1FFFB6F40067F64B /* HorizontalCell.swift */,
+				EC43432420232C79003DC3FB /* SecondController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -380,12 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC1BBDDA1FFFACA30067F64B /* ExampleCell.swift in Sources */,
+				EC43432520232C79003DC3FB /* SecondController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				EC1BBDDC1FFFB68D0067F64B /* HorizontalController.swift in Sources */,
-				EC3FFF681FFF9AF800FB8B47 /* CollectionViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				EC1BBDDE1FFFB6F40067F64B /* HorizontalCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

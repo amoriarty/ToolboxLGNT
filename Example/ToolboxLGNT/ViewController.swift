@@ -10,8 +10,7 @@ import UIKit
 import ToolboxLGNT
 
 class ViewController: UIViewController {
-    private let collectionViewController = CollectionViewController()
-    
+    private let secondController = SecondController()
     private let centeredView: UIView = {
         let view = UIView()
         view.backgroundColor = .red
@@ -89,7 +88,7 @@ class ViewController: UIViewController {
     }
     
     @objc func handleNext() {
-        navigationController?.pushViewController(collectionViewController, animated: true)
+        navigationController?.pushViewController(secondController, animated: true)
     }
 }
 
