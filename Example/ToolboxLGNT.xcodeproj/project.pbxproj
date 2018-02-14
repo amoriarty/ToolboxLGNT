@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		366C05921CFF51CA11055C74 /* Pods_ToolboxLGNT_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62A9CC679BEDCAD6C8BFE70 /* Pods_ToolboxLGNT_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		70561BADB57B7CCE23E2342C /* Pods_ToolboxLGNT_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02AE585A5CAE57032C9A131 /* Pods_ToolboxLGNT_Tests.framework */; };
-		EC43432520232C79003DC3FB /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC43432420232C79003DC3FB /* SecondController.swift */; };
+		EC3CEE1820343B5F000624C1 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CEE1720343B5E000624C1 /* CollectionViewController.swift */; };
+		EC3CEE1A20343B83000624C1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CEE1920343B83000624C1 /* CollectionViewCell.swift */; };
+		EC6CF76C203433A000A31F67 /* GenericController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF76B203433A000A31F67 /* GenericController.swift */; };
+		EC6CF76E203433FC00A31F67 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF76D203433FC00A31F67 /* TableViewController.swift */; };
+		EC6CF7712034385D00A31F67 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF7702034385D00A31F67 /* TableCell.swift */; };
+		EC7C85F120343F8D008372E1 /* GenericControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C85F020343F8D008372E1 /* GenericControllerView.swift */; };
+		EC7C85F3203448CB008372E1 /* AdaptiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C85F2203448CB008372E1 /* AdaptiveController.swift */; };
+		EC7C85F520344B56008372E1 /* PaddingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C85F420344B56008372E1 /* PaddingController.swift */; };
+		EC7C85F7203450C0008372E1 /* RegexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C85F6203450C0008372E1 /* RegexController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +40,6 @@
 		607FACD01AFB9204008FA782 /* ToolboxLGNT_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolboxLGNT_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* ToolboxLGNT_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolboxLGNT_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +51,15 @@
 		B065A665207AFBAC1F1F43C1 /* Pods-ToolboxLGNT_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolboxLGNT_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToolboxLGNT_Tests/Pods-ToolboxLGNT_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C02AE585A5CAE57032C9A131 /* Pods_ToolboxLGNT_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolboxLGNT_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C82F1A40256C3580922A9D /* ToolboxLGNT.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ToolboxLGNT.podspec; path = ../ToolboxLGNT.podspec; sourceTree = "<group>"; };
-		EC43432420232C79003DC3FB /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
+		EC3CEE1720343B5E000624C1 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		EC3CEE1920343B83000624C1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		EC6CF76B203433A000A31F67 /* GenericController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericController.swift; sourceTree = "<group>"; };
+		EC6CF76D203433FC00A31F67 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EC6CF7702034385D00A31F67 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		EC7C85F020343F8D008372E1 /* GenericControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericControllerView.swift; sourceTree = "<group>"; };
+		EC7C85F2203448CB008372E1 /* AdaptiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveController.swift; sourceTree = "<group>"; };
+		EC7C85F420344B56008372E1 /* PaddingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingController.swift; sourceTree = "<group>"; };
+		EC7C85F6203450C0008372E1 /* RegexController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexController.swift; sourceTree = "<group>"; };
 		FDF263B46387B999307F5A4E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,8 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				EC43432420232C79003DC3FB /* SecondController.swift */,
+				EC6CF75E20342FE800A31F67 /* Controllers */,
+				EC6CF76F2034383C00A31F67 /* Views */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -157,6 +171,29 @@
 				B065A665207AFBAC1F1F43C1 /* Pods-ToolboxLGNT_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC6CF75E20342FE800A31F67 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC6CF76D203433FC00A31F67 /* TableViewController.swift */,
+				EC6CF76B203433A000A31F67 /* GenericController.swift */,
+				EC3CEE1720343B5E000624C1 /* CollectionViewController.swift */,
+				EC7C85F2203448CB008372E1 /* AdaptiveController.swift */,
+				EC7C85F420344B56008372E1 /* PaddingController.swift */,
+				EC7C85F6203450C0008372E1 /* RegexController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC6CF76F2034383C00A31F67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC6CF7702034385D00A31F67 /* TableCell.swift */,
+				EC7C85F020343F8D008372E1 /* GenericControllerView.swift */,
+				EC3CEE1920343B83000624C1 /* CollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,9 +408,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC43432520232C79003DC3FB /* SecondController.swift in Sources */,
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				EC7C85F3203448CB008372E1 /* AdaptiveController.swift in Sources */,
+				EC6CF7712034385D00A31F67 /* TableCell.swift in Sources */,
+				EC7C85F7203450C0008372E1 /* RegexController.swift in Sources */,
+				EC3CEE1A20343B83000624C1 /* CollectionViewCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				EC3CEE1820343B5F000624C1 /* CollectionViewController.swift in Sources */,
+				EC6CF76E203433FC00A31F67 /* TableViewController.swift in Sources */,
+				EC7C85F120343F8D008372E1 /* GenericControllerView.swift in Sources */,
+				EC7C85F520344B56008372E1 /* PaddingController.swift in Sources */,
+				EC6CF76C203433A000A31F67 /* GenericController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

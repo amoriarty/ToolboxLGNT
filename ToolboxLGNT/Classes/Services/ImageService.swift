@@ -22,6 +22,7 @@ public class ImageService {
             completion(link, cachedImage)
             return
         }
+        
         DispatchQueue.global(qos: qos).async {
             guard let data = try? Data(contentsOf: url) else {
                 DispatchQueue.main.async { completion(link, nil) }
